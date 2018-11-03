@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
 
+import * as actions from "../../actions";
+
 class Signup extends Component {
     onSubmit = formProps => {
         console.log("formProps: ", formProps);
