@@ -22,3 +22,12 @@ export const signup = (formProps, callback) => async dispatch => {
         dispatch({ type: AUTH_ERROR, payload: "Wrong credentials" });
     }
 };
+
+export const signout = () => {
+    localStorage.removeItem("token");
+
+    return {
+        type: AUTH_USER,
+        payload: ""
+    };
+};
