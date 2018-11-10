@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import "./Header.css";
 
 class Header extends React.Component {
     renderLinks() {
@@ -23,7 +24,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <div className="header">
                 <Link to="/">Home</Link>
                 {this.renderLinks()}
             </div>
